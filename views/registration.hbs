@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <style>
+        /* For mobile phones:
+[class*="col-"] {
+  width: 100%;
+} */
+
+    </style>
+<link rel="icon" type="image/x-icon" href="img/hands.png" >
+<script type="text/JavaScript">
+    function validateForm() {
+let email1 = document.forms["myform"]["email"].value;
+let password1  = document.forms["myform"]["password"].value;
+let mobileno1  = document.forms["myform"]["mobileno"].value;
+if (email1 == "") {
+  alert("Name must be filled out");
+  return false;
+}
+else if (password1 == ""){
+    alert("Password must be filled out");
+  return false;
+}
+else if (mobileno1 == ""){
+    alert("Mobile No. must be filled out");
+  return false;
+}
+else{
+    alert("Successful");
+  return true;
+}
+}
+</script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/registration" method="post">
+            <h2>REGISTERATION</h2>
+            <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <input type="text" placeholder="Username" required> -->
+                </span>
+                <input type="text" name="username" placeholder="Enter Your Name" required>
+            </td>
+            </tr>
+            
+            </div>
+
+            <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-envelope" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i> -->
+                    <!-- <input type="text" placeholder="Username" required> -->
+                </span>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+            </td>
+            </tr>
+            
+            </div>
+
+            <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-phone" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i> -->
+                    <!-- <input type="text" placeholder="Username" required> -->
+                </span>
+                <input type="text" pattern="[0-9]{10}" name="phone" placeholder="Enter Your Mobile No." required>
+            </td>
+            </tr>
+            
+            </div>
+
+            <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-calendar-days" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i> -->
+                    <!-- <input type="text" placeholder="Username" required> -->
+                </span>
+                <input type="date" name="dob" placeholder="Enter Your DOB" required>
+            </td>
+            </tr>
+            
+            </div>
+
+            <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-landmark" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i> -->
+                    <!-- <input type="text" placeholder="Username" required> -->
+                </span>
+                <input type="textarea" cols="20" rows="5" name="address" placeholder="Enter Your Address" required>
+            </td>
+            </tr>
+            
+            </div>
+
+            <!-- <div class="input-box">
+                <tr>
+                    <td>
+                <span class="icon">
+                    <i class="fa-solid fa-user" style="color:rgb(0, 0, 0)"></i>
+                     <input type="text" placeholder="Username" required> -->
+                <!-- </span>
+                <input type="date" name="username" placeholder="Enter Your DOB" required>
+            </td>
+            </tr>
+            
+            </div> --> 
+
+            <div class="input-box">
+                <span class="icon">
+                    <i class="fa-solid fa-key" style="color:rgb(0, 0, 0)"></i>
+                </span>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+
+            </div>
+
+            <div class="input-box">
+                <span class="icon">
+                    <i class="fa-solid fa-lock" style="color:rgb(0, 0, 0)"></i>
+                    <!-- <i class="fa-solid fa-key" style="color:rgb(0, 0, 0)"></i> -->
+                </span>
+                <input type="password" name="confirmpassword" placeholder="Confirm Password" required><br><br>
+
+            </div>
+
+            <!-- <div class="forget-password">
+                <a href="a.html">Forget Password?</a><br>
+            </div> -->
+            <button type="submit" class="login-button">Submit</button><br><br>
+            <button type="reset" class="login-button">Reset</button><br><br>
+            <div class="registration-link">
+                <p>You have an account?<a href="/login">Login</a></p><br><br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

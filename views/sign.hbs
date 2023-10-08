@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <link rel="icon" type="image/x-icon" href="img/hands.png" >
+  <title>Sign Language</title>
+</head>
+
+<body>
+  <div>
+    <div id="pagetop">
+      <!-- <a href="regi1"id="signbtn" class="bar-item log-btn bar-item-hover log-right light-green">Sign Up</a> -->
+      <a href="/logout" id="loginbtn" class="btn log-btn">Logout</a>
+    </div>
+    <div id="navbar">
+      <ul>
+        <li> <a href="#" class="other"><i class="fa-solid fa-hands"></i>A-Sign</a></li>
+        <li> <a href="/index"><i class="fa-solid fa-house home-btn"></i></a></li>
+        <li> <a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Languages</a>
+          <div class="dropdown-content">
+            <a href="/sign">Sign Language</a>
+            <a href="/blind">Blind Language</a>
+          </div>
+        </li>
+        <li><a href="/chatbot"target="_self">ChatBot</a></li>
+      </ul>
+    </div><br><br><br><br>
+    <!-- <div class="side-dropdown" style="float: left!important;">
+              <button class="side-dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="side-dropdown-content sidebar collapse" id="sidenav" style="top:118px;display:block;">
+              <div id="leftmenuinner" style="padding-top: 0px;">
+                <div id="leftmenuinnerinner">
+                  <a target="_top" href="blind"><h2><span>Basic</span></h2></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="/sign">Basic</a>
+      <a href="/types">Types</a>
+      <a href="/relation">Relation</a>
+      <a href="/learn">Learn</a>
+      <a href="/history">History</a>
+      <a href="/quiz">Quiz</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <div class="main-body1">
+        <h1>Sign Language</h1>
+        <p>&nbsp;&nbsp;Sign languages (also known as signed languages) are languages that use the visual-manual modality to convey
+          meaning, instead of spoken words. Sign languages are expressed through manual articulation in combination
+          with non-manual markers. Sign languages are full-fledged natural languages with their own grammar and
+          lexicon. Sign languages are not universal and are usually not mutually intelligible, although there
+          are also similarities among different sign languages.</p>
+        <p>&nbsp;&nbsp;Sign language is manual communication commonly used by people who are deaf. Sign language is not universal;
+          people who are deaf from different countries speak different sign languages. The gestures or symbols in sign
+          language are organized in a linguistic way. Each individual gesture is called a sign.</p>
+        <br><br><img src="img/sign.png" alt="sign language" width="550" height="350">
+        <br><br><p>&nbsp;&nbsp;The number of sign languages worldwide is not precisely known. Each country generally has its own native sign
+          language; some have more than one. The 2021 edition of <a href="https://en.wikipedia.org/wiki/Ethnologue">Ethnologue</a> lists 150 sign languages, while the
+          SIGN-HUB Atlas of Sign Language Structures lists over 200 and notes that there are more which have not been
+          documented or discovered yet. As of 2021, <a href="https://en.wikipedia.org/wiki/Indo_Sign_Language">Indo Sign Language</a> is the most used sign language in the world,
+          and Ethnologue ranks it as the 151st most "spoken" language in the world.</p>
+          <br><br><br><br>
+          <div>
+            <button class="collapsible">What is finger spell?</button>
+<div class="content">
+  <p>Finger spelling is a building block in which you or your child uses hands and fingers to spell out words. Hand shapes represent the letters in the alphabet. Finger spelling is used with many other building blocks; it is almost never used by itself.</p>
+</div>
+<button class="collapsible">Is sign easy to learn?</button>
+<div class="content">
+  <p>Sign language is one of the easiest languages to learn. So many of the signs are commonplace gestures. Children pick up on the signs quickly and are eager to use them. The fact that it is easy helps encourage the learning.</p>
+</div>
+<button class="collapsible">What are the 5 rules of sign language?</button>
+<div class="content">
+  <p>In American Sign Language (ASL), we use the 5 Parameters of ASL to describe how a sign behaves within the signer's space. The parameters are handshape, palm orientation, movement, location, and expression/non-manual signals.</p>
+</div>
+<button class="collapsible">Who invented sign language?</button>
+<div class="content">
+  <p>The first American school for the deaf was established in 1817 by Laurent Clerc and Thomas Hopkins Gallaudet. They are often credited as the inventors of American Sign Language.</p>
+</div>
+<button class="collapsible">What are 5 interesting facts about sign language?</button>
+<div class="content">
+  <p>Five Interesting Facts Most People Don't Know About Sign Language <br>
+    &nbsp;&nbsp; - It's the fourth most used language in the UK.<br>
+    &nbsp;&nbsp; - Different countries have their own versions of sign language.<br>
+    &nbsp;&nbsp; - Sign language uses more than just hand gestures.<br>
+    &nbsp;&nbsp; - Many deaf people have 'name signs'.<br>
+    &nbsp;&nbsp; - Sign language isn't as difficult to learn as it looks.</p>
+</div>
+          </div><br><br>
+          <br><br><img src="img/sign1.jpg" alt="Alphabet of sign language" width="650" height="450">
+        </div>
+        <br><br><br><br><br><br><br>
+        <iframe class="vid"width="660" height="415" src="https://www.youtube.com/embed/3jqdRk-Naz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br><br><br><br><br>
+        <iframe class="vid"width="660" height="415" src="https://www.youtube.com/embed/9NpgdozsJjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+      </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <br><br><br><br>
+    
+  </div>
+  <div class="footer-main">
+    <div id="foot">
+      <p>Owner: Aishwarya Pawar<br>
+      <a href="#">kbtug20180@kbtcoe.com</a></p>
+      <br>
+        <div class="foot-content">
+                  <div class="foot-link">
+                    <span><a href="https://www.twitter.com/Twitter"><i class="fab fa-twitter" style="color: rgb(0, 162, 255);"></i></a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.facebook.com/TwitterInc"><i class="fab fa-facebook-f" style="color: rgb(30, 0, 255);"></i></a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.youtube.com/"><i class="fab fa-youtube" style="color: rgb(255, 0, 0);"></i></a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.linkedin.com/company/twitter"><i class="fab fa-linkedin" style="color: rgb(0, 123, 255);"></i></a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.instagram.com/twitter"><i class="fab fa-instagram" style="color: rgb(255, 0, 217);"></i></a></span>
+                  </div><br><br><br>
+                  <div style="line-height: 25px;">
+                    <a href="/sign">Sign Language</a><br>
+                    <a href="/learn">Learn</a><br>
+                    <a href="/quiz">Quiz</a><br>
+                    <a href="/about">About us</a><br>
+                  </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
