@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/hands.png" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lexend Peta', sans-serif;
+            box-sizing: border-box;
+        } */
+        /* #head {
+            top: 1cm;
+  text-shadow: 3px 3px rgb(105, 105, 105);
+  line-height: 5em;
+  text-align: center;
+  height:3em;
+  font-size: 10cm;
+} */
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #000000;
+            
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .contact .content p {
+            font-weight: 300;
+            color: #000000;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .container .contactInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .contactInfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .container .contactInfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contactInfo .box .text h3 {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            /* flex-direction: column; */
+            font-weight: 500;
+        }
+
+        .container .contactInfo .box .text p {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            /* flex-direction: column; */
+            font-weight: 300;
+        }
+
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            box-shadow: #333;
+            background: #fff, transparent;
+
+        }
+
+        .contactForm h2 {
+            font-size: 30px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:valid~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:valid~span {
+            color: #ff0000;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .contactForm .inputBox input[type="submit"],
+        .contactForm .inputBox input[type="button"] {
+            width: 100px;
+            background: #ffffff;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+     <div id="pagetop">
+        <!-- <a href="regi1.html"id="signbtn" class="bar-item log-btn bar-item-hover log-right light-green">Sign Up</a> -->
+           <a href="/logout" id="loginbtn" class="btn log-btn">Logout</a>
+        </div>
+           <div id="navbar">
+            <ul>
+              <li> <a href="#" class="other"><i class="fa-solid fa-hands"></i>A-Sign</a></li>
+           <li> <a href="/index"><i class="fa-solid fa-house home-btn"></i></a></li>
+           <li> <a href="/about">About</a></li>
+           <li><a href="/contact">Contact</a></li>
+           <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Languages</a>
+            <div class="dropdown-content">
+              <a href="/sign">Sign Language</a>
+              <a href="/blind">Blind Language</a>
+            </div>
+          </li>
+          <li><a href="/chatbot"target="_self">ChatBot</a></li>
+        </ul>
+        </div><br><br>
+
+<div style="background-image: url(img/cloud.jpg);">
+    <section class="contact">
+        <div class="content">
+            <h2 id="head">Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil odit adipisci illo inventore eum,
+                corrupti commodi delectus.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1234 Gangapur Road,<br>Nashik,India,<br>14568</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9359954585</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>kbtug20180@kbtcoe.org</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="/contact" method="post">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="msg" id=""></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">&nbsp;&nbsp;
+                        <a href="/registration"><input type="button" value="Register"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </div>
+    {{!-- <div class="footer-main">
+        <div id="foot">
+          <p>Owner: Aishwarya Pawar<br>
+          <a href="#">kbtug20180.com</a></p>
+            <div class="foot-content">
+                      <div class="foot-link">
+                        <span><a href="https://www.twitter.com/Twitter"><i class="fab fa-twitter" style="color: rgb(255, 255, 255);"></i></a></span>&nbsp;&nbsp;
+                        <span><a href="https://www.facebook.com/TwitterInc"><i class="fab fa-facebook-f" style="color: rgb(255, 255, 255);"></i></a></span>&nbsp;&nbsp;
+                        <span><a href="https://www.youtube.com/"><i class="fab fa-youtube" style="color: rgb(255, 255, 255);"></i></a></span>&nbsp;&nbsp;
+                        <span><a href="https://www.linkedin.com/company/twitter"><i class="fab fa-linkedin" style="color: rgb(255, 255, 255);"></i></a></span>&nbsp;&nbsp;
+                        <span><a href="https://www.instagram.com/twitter"><i class="fab fa-instagram" style="color: rgb(255, 255, 255);"></i></a></span>
+                      </div>
+            </div>
+        </div>
+      </div> --}}
+</body>
+
+</html>
